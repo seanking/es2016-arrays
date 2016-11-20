@@ -73,6 +73,22 @@ describe('ES2016 ', () => {
     assert.isFalse(name.includes('Bob'));
   });
 
+  it('should find value from index', () => {
+    // When
+    const array = [1, 2, 3];
+
+    // Then
+    assert.isTrue(array.includes(3, 2));
+  });
+
+  it('should not find value from index', () => {
+    // When
+    const array = [1, 2, 3];
+
+    // Then
+    assert.isFalse(array.includes(3, 3));
+  });
+
   class Person {
     constructor(firstName, lastName) {
       this.firstName = firstName;
