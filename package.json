@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/seanking/es2016-arrays#readme",
   "devDependencies": {
+    "babel-preset-es2016": "^6.16.0",
     "babel-register": "^6.4.3",
     "chai": "^3.5.0",
     "eslint": "^1.10.3",
