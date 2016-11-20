@@ -1,0 +1,42 @@
+{
+  "name": "es2016-arrays",
+  "version": "1.0.0",
+  "description": "Arrays in ES2015",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --compilers js:babel-register 'test/**/*.js'",
+    "pretest": "npm run lint"
+  },
+  "eslintConfig": {
+    "extends": "airbnb/base",
+    "env": {
+      "mocha": true
+    },
+    "rules": {
+      "no-var": 0,
+      "vars-on-top": 0,
+      "block-scoped-var": 0,
+      "no-console": 0,
+      "no-loop-func": 0,
+      "no-use-before-define": 0,
+      "no-sparse-arrays": 0
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanking/es2016-arrays.git"
+  },
+  "author": "Sean King",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanking/es2016-arrays/issues"
+  },
+  "homepage": "https://github.com/seanking/es2016-arrays#readme",
+  "devDependencies": {
+    "babel-register": "^6.4.3",
+    "chai": "^3.5.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "mocha": "^2.3.4"
+  }
+}
