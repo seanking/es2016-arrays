@@ -1,92 +1,119 @@
+
 'use strict';
 
 var assert = require('chai').assert;
 
 describe('ES2016 ', () => {
   it('should include integer', () => {
-    // When
+    // Given
     const array = [1, 2, 3];
 
+    // When
+    const result = array.includes(3);
+
     // Then
-    assert.isTrue(array.includes(3));
+    assert.isTrue(result);
   });
 
   it('should include not a number', () => {
-    // When
+    // Given
     const array = [1, 2, NaN];
 
+    // When
+    const result = array.includes(NaN);
+
     // Then
-    assert.isTrue(array.includes(NaN));
+    assert.isTrue(result);
   });
 
   it('should include undefined', () => {
-    // When
+    // Given
     const array = [1, , 3];
 
+    // When
+    const result = array.includes(undefined);
+
     // Then
-    assert.isTrue(array.includes(undefined));
+    assert.isTrue(result);
   });
 
   it('should include string', () => {
-    // When
+    // Given
     const array = ['one', 'two', 'three'];
 
+    // When
+    const result = array.includes('three');
+
     // Then
-    assert.isTrue(array.includes('three'));
+    assert.isTrue(result);
   });
 
   it('should include class', () => {
     // Given
     const person = new Person('Gregory', 'House');
-
-    // When
     const array = [person];
 
+    // When
+    const result = array.includes(person);
+
     // Then
-    assert.isTrue(array.includes(person));
+    assert.isTrue(result);
   });
 
   it('should not include class', () => {
     // Given
     const person = new Person('Gregory', 'House');
-
-    // When
     const array = [person];
 
+    // When
+    const result = array.includes(new Person('Gregory', 'House'));
+
     // Then
-    assert.isFalse(array.includes(new Person('Gregory', 'House')));
+    assert.isFalse(result);
   });
 
   it('should include character', () => {
-    // When
+    // Given
     const name = 'Gregory House';
 
+    // When
+    const result = name.includes('House');
+
     // Then
-    assert.isTrue(name.includes('House'));
+    assert.isTrue(result);
   });
 
   it('should not include character', () => {
-    // When
+    // Given
     const name = 'Gregory House';
 
+    // When
+    const result = name.includes('Bob');
+
     // Then
-    assert.isFalse(name.includes('Bob'));
+    assert.isFalse(result);
   });
 
-  it('should find value from index', () => {
-    // When
+  it('should find value from index the specified index', () => {
+    // Given
     const array = [1, 2, 3];
 
+    // When
+    const result = array.includes(3, 2);
+
     // Then
-    assert.isTrue(array.includes(3, 2));
+    assert.isTrue(result);
   });
 
-  it('should not find value from index', () => {
-    // When
+  it('should not find item from the index specified', () => {
+    // Given
     const array = [1, 2, 3];
 
+    // When
+    const result = array.includes(3, 3);
+
     // Then
-    assert.isFalse(array.includes(3, 3));
+    assert.isFalse(result);
   });
 
   class Person {
