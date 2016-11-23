@@ -97,9 +97,10 @@ describe('ES2016 ', () => {
   it('should find value from index the specified index', () => {
     // Given
     const array = [1, 2, 3];
+    const fromIndex = 2;
 
     // When
-    const result = array.includes(3, 2);
+    const result = array.includes(3, fromIndex);
 
     // Then
     assert.isTrue(result);
@@ -108,9 +109,10 @@ describe('ES2016 ', () => {
   it('should not find item from the index specified', () => {
     // Given
     const array = [1, 2, 3];
+    const fromIdex = 3;
 
     // When
-    const result = array.includes(3, 3);
+    const result = array.includes(3, fromIdex);
 
     // Then
     assert.isFalse(result);
