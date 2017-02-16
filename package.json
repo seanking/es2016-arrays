@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/seanking/es2016-features/issues"
   },
-  "homepage": "https://github.com/seanking/es2016-featuress#readme",
+  "homepage": "https://github.com/seanking/es2016-features#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.15.0",
