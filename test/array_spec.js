@@ -2,7 +2,7 @@
 
 var assert = require('chai').assert;
 
-describe('ES2016 ', () => {
+describe('ES2016 Array.prototype.includes', () => {
   it('should include integer', () => {
     // Given
     const array = [1, 2, 3];
