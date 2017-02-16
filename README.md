@@ -46,8 +46,9 @@ let x = 3;
 x **= 2; // x === 9
 ````
 
-Summary
+## Summary
 
 While the features new in ES2016 aren't as game changing as the features provided by ES2015, it is still reassuring to see the EcmaScript specification being updated on a regular scheduled.
 
 Most major browsers provide support for Array.prototype.includes except for Internet Explorer and few browsers support the new exponential operators. If these feature are important to you developer, try running them through a trans-compoiler like Babel.
+
