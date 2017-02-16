@@ -1,4 +1,4 @@
-#ES2016/ES7
+# ES2016/ES7
 
 ES2016 is a smaller evolution of EcmaScript than ES2017. This will most likely be the trend going forward, since the a new edition will be published year.
 
@@ -39,11 +39,12 @@ The following is a simple example of calculating the three squared;
 3 ** 2; // 9
 ````
 
-It is also possible to update a variable using the exponentation operator.
+It is possible to update a variable using the exponentation operator.
 
 ````
 let x = 3;
-x **= 2; // x === 9
+x **= 2;
+console.log(x); // 9
 ````
 
 ## Summary
