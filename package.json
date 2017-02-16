@@ -1,13 +1,14 @@
 {
-  "name": "es2016-arrays",
+  "name": "es2016",
   "version": "1.0.0",
-  "description": "Arrays in ES2015",
+  "description": "ES2015",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha --compilers js:babel-register 'test/**/*.js'",
     "pretest": "npm run lint"
   },
   "eslintConfig": {
+    "ecmaVersion": 7,
     "extends": "airbnb/base",
     "env": {
       "mocha": true
@@ -33,11 +34,12 @@
   },
   "homepage": "https://github.com/seanking/es2016-arrays#readme",
   "devDependencies": {
-    "babel-preset-es2016": "^6.16.0",
-    "babel-register": "^6.4.3",
+    "babel-preset-es2017": "^6.22.0",
+    "babel-register": "^6.23.0",
     "chai": "^3.5.0",
-    "eslint": "^1.10.3",
-    "eslint-config-airbnb": "^3.1.0",
-    "mocha": "^2.3.4"
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0"
   }
 }
