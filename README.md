@@ -36,7 +36,8 @@ The exponentiation operator (**) was introduced as syntactic sugar for Math.pow(
 The following is a simple example of calculating the three squared;
 
 ````
-3 ** 2; // 9
+const x = 3 ** 2;
+console.log(x);  // 9
 ````
 
 It is possible to update a variable using the exponentation operator.
