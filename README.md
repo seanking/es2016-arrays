@@ -1,8 +1,8 @@
 # ES2016
 
-The ES2016 language specification was rolled out without much fanfare. It was a quiet release because the new specification only came with a couple new features. Because the ES language specification is on a yearly release cycle, it will most likey result in small features sets.
+The ES2016 language specification was rolled out without much fanfare. It was probably a quiet release because it only has a couple new minor features.
 
-Two new features were introduced with ES2016.
+ES2016 Features:
 * Array.proptype.includes
 * Exponentiation Operator
 
