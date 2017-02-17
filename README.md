@@ -8,7 +8,7 @@ ES2016 Features:
 
 ## Array.proptype.includes
 
-A new method was introduced to Array that determines whether an item is within the array. The new function has two signatures; one for searching the entire array for an item and another for searching the array from a specified index.
+A new method was introduced to Array that determines whether an item is within the array. The new function has two signatures; one signature for searching the entire array for an item and another for searching the array starting at a specified index.
 
 
 The following example inspects the entire array for an item.
@@ -29,7 +29,7 @@ array.includes(3, fromIndex);  // true
 array.includes(1, fromIndex);  // false
 ````
 
-## Exponential Operator
+## Exponentiation Operator
 
 The exponentiation operator (**) was introduced as syntactic sugar for Math.pow(base, exponent).
 
@@ -49,6 +49,6 @@ console.log(x); // 9
 
 ## Summary
 
-While the features new in ES2016 aren't as game changing as the features provided by ES2015, it is still reassuring to see the EcmaScript specification being updated on a regular scheduled.
+While the new features in ES2016 aren't as game changing as the features provided by ES2015, it is still reassuring to see the EcmaScript specification updated on a regular schedule.
 
-Most major browsers provide support for Array.prototype.includes except for Internet Explorer and fewer browsers support the new exponential operator. If these feature are important to you developer, try running them through a transpiler like [Babel](https://babeljs.io).
+Most major browsers provide support for Array.prototype.includes except for Internet Explorer and few browsers support the new exponential operators. If these features are important to you as a developer, try running them through a transpiler like [Babel](https://babeljs.io).
