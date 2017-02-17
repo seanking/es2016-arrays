@@ -1,6 +1,6 @@
-# ES2016/ES7
+# ES2016
 
-ES2016 is a smaller evolution of EcmaScript than ES2017. This will most likely be the trend going forward, since the a new edition will be published year.
+The ES2016 language specification was rolled out without much fanfare. It was a quiet release because the new specification only came with a couple new features. Because the ES language specification is on a yearly release cycle, it will most likey result in small features sets.
 
 Two new features were introduced with ES2016.
 * Array.proptype.includes
@@ -8,15 +8,15 @@ Two new features were introduced with ES2016.
 
 ## Array.proptype.includes
 
-A new method was introduced to Array that determines whether item is within the array. The new method provides to two signatures; one for searching the entire array for an item and another for searching the array starting at a specified index.
+A new method was introduced to Array that determines whether an item is within the array. The new function has two signatures; one for searching the entire array for an item and another for searching the array from a specified index.
 
 
 The following example inspects the entire array for an item.
 
 ````
 const array = [1, 2, 3];
-array.includes(3);  //true
-array.includes(4);  //false
+array.includes(3);  // true
+array.includes(4);  // false
 ````
 
 
@@ -25,8 +25,8 @@ The following example inspects the array for an item, but starting at a specifie
 ````
 const array = [1, 2, 3];
 const fromIndex = 2;
-array.includes(3, fromIndex);  //true
-array.includes(1, fromIndex);  //false
+array.includes(3, fromIndex);  // true
+array.includes(1, fromIndex);  // false
 ````
 
 ## Exponential Operator
@@ -51,4 +51,4 @@ console.log(x); // 9
 
 While the features new in ES2016 aren't as game changing as the features provided by ES2015, it is still reassuring to see the EcmaScript specification being updated on a regular scheduled.
 
-Most major browsers provide support for Array.prototype.includes except for Internet Explorer and few browsers support the new exponential operators. If these feature are important to you developer, try running them through a trans-compoiler like [Babel](https://babeljs.io).
+Most major browsers provide support for Array.prototype.includes except for Internet Explorer and fewer browsers support the new exponential operator. If these feature are important to you developer, try running them through a transpiler like [Babel](https://babeljs.io).
